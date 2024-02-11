@@ -130,3 +130,10 @@ But we just added these
 Why is that we got "+git commit -a -m "Commit by skipping the Staging Area using -a"" as well ?
 
 It is because, we pressed "Enter" key. This will be considered as a change for that line.
+
+"git diff" Vs "git diff --staged"
+=================================
+
+git diff: To check the difference btw a version in working directory and recent commit.
+git diff --staged: To check the difference btw a version in staging area and recent commit.
+
