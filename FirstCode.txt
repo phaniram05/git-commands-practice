@@ -87,3 +87,12 @@ How the check sum gets updated?
 
 Using SHA-1.
 ******
+
+So the workflow is: Working Directory > Staging Area > Commit.
+
+But, Can we skip the Staging Area and directly commit?
+------------------------------------------------------
+
+Yes, for that use the command below. Use "-a" attribute
+
+git commit -a -m "Commit by skipping the Staging Area using -a"
