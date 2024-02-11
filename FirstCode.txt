@@ -60,9 +60,30 @@ git commit: Commits the files from staging area to the local repo.
 
 While commiting, make sure to have the message. Otherwise, the commit fails.
 
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git status
+On branch main
+nothing to commit, working tree clean
+
+******
+Added the output:
+------------------
 (base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git commit -m "My first commit"
 [main (root-commit) e5eb874] My first commit
  1 file changed, 63 insertions(+)
  create mode 100644 FirstCode.txt
 
- 
+But, what is e5eb874?
+
+The alpha_numeric characters is called "Check sum". 
+***** (git generates 40 characters, but we focus on first 7)
+Git also provides INTEGRITY. Even the slightest of changes, git will change the Check sum.
+So, when we commit, we will get check sum 'a'.
+
+We did some updates to the code. Therefore, the file is an updated one. Therefore, the checksum
+gets updated. ==> Git will track the update using the check sum.
+
+How the check sum gets updated?
+-------------------------------
+
+Using SHA-1.
+******
