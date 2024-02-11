@@ -1,0 +1,63 @@
+Git is a distributed Version Control System.
+
+There are a few terms to remember:
+- Working directory is different from the (local repository or .git)
+- By default, the created files will be present inside the working directory.
+- We have to let know the git that take care of the created file. We do that using staging area, commit.
+
+- Use "git add" to add files to the staging area.
+
+git add FirstCode.txt --> Adds the file FirstCode.txt to the staging area.
+
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git add FirstCode.txt
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   FirstCode.txt
+
+How to remove a file/ unstage from staging area?
+================================================
+
+git rm --cached FirstCode.txt
+
+
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git rm --cached FirstCode.txt
+rm 'FirstCode.txt'
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        FirstCode.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % 
+
+
+Let stage the file back ..
+
+git add FirstCode.txt
+
+How to check the Commit History?
+--------------------------------
+
+"git log"
+
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git log
+fatal: your current branch 'main' does not have any commits yet
+
+How to commit your files to .git?
+---------------------------------
+
+git commit: Commits the files from staging area to the local repo.
+-----------
+
+While commiting, make sure to have the message. Otherwise, the commit fails.
+
+
