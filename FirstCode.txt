@@ -60,4 +60,9 @@ git commit: Commits the files from staging area to the local repo.
 
 While commiting, make sure to have the message. Otherwise, the commit fails.
 
+(base) beingrampopuri@RaPos-MacBook-Air-3 Working Directory % git commit -m "My first commit"
+[main (root-commit) e5eb874] My first commit
+ 1 file changed, 63 insertions(+)
+ create mode 100644 FirstCode.txt
 
+ 
